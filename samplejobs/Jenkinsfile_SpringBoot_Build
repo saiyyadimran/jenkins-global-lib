@@ -50,7 +50,7 @@ try {
 							remote: env.GCR_URL,
 							project: env.GOOGLE_PROJECT_CRED_ID,
 							imageName: "springboot",
-							tag: ${BUILD_NUMBER},
+							tag: "${BUILD_NUMBER}",
 							otherargs: "--no-cache=true --force-rm",
 							filePath: "$WORKSPACE/build/springboot/Dockerfile",
 							contextPath: "$WORKSPACE/build/springboot"
