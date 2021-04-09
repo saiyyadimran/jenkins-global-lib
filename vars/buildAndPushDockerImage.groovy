@@ -6,4 +6,5 @@ def call(Map args) {
 		app.push("latest")
 	}
 	sh "docker rmi ${args.remote}/${args.project}/${args.imageName}:${args.tag}"
-	echo "Finished creation of docker images and pushed to GCR" 
+	echo "Finished creation of docker images and pushed to GCR"
+}
